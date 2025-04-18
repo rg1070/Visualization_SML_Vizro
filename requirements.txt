@@ -1,2 +1,5 @@
 vizro
 pandas
+plotly
+numpy
+openpyxl
