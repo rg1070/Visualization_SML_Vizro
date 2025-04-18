@@ -1,25 +1,25 @@
-# 📊 Shoals Marine Laboratory (SML) Energy Dashboard
+# Shoals Marine Laboratory (SML) Energy Dashboard
 
-This project demonstrates the development and deployment of an interactive data dashboard for Shoals Marine Laboratory (SML), based on historical data. The dashboard was created as part of a Ph.D. research project at the University of New Hampshire and is intended to visualize renewable energy generation, battery storage behavior, and demand dynamics within an off-grid microgrid environment.
+This project is a sample development and deployment of an interactive data dashboard for Shoals Marine Laboratory (SML), based on historical data. The visualizations are created as part of a Ph.D. research project at the University of New Hampshire and is intended to graph renewable energy generation, battery storage behavior, and demand dynamics within an off-grid microgrid environment.
 
-📍 **Live demo**: [Deployed on Render](https://sml-vizro-dashboard.onrender.com)  
-🕒 *Note*: Due to Render’s free-tier limitations, the dashboard may take up to **one minute** to load when first accessed after a period of inactivity.
+**Live demo**: [Deployed on Render](https://sml-vizro-dashboard.onrender.com)  
+*Note*: Due to Render’s free-tier limitations, the dashboard may take up to **one minute** to load when first accessed after a period of inactivity.
 
 ---
 
-## 📚 Research Context
+## Research Context
 
 The dashboard is developed using data and methods presented in peer-reviewed publications associated with the doctoral research conducted at the University of New Hampshire. The full details of data preparation, modeling framework, and analysis are documented in the published literature. A complete list of scholarly contributions can be found via the author's Google Scholar profile:
 
-🔗 **Author Profile**: [Roozbeh Ghasemi – Google Scholar](https://scholar.google.com/citations?user=4X92o5gAAAAJ&hl=en)
+**Author Profile**: [Roozbeh Ghasemi – Google Scholar](https://scholar.google.com/citations?user=4X92o5gAAAAJ&hl=en)
 
 ---
 
-## 🗃️ Data Source
+## Data Source
 
 All data visualized within this dashboard are sourced from the publicly available archives of the Shoals Marine Laboratory (SML):
 
-🌐 [https://sustainablesml.org](https://sustainablesml.org)
+[https://sustainablesml.org](https://sustainablesml.org)
 
 The data include:
 - Photovoltaic (PV) generation
@@ -30,7 +30,7 @@ The data include:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **[Vizro](https://github.com/plotly/vizro)** (built on Plotly Dash)
 - **Python**, **Pandas**, **Plotly Express**
@@ -38,7 +38,7 @@ The data include:
 
 ---
 
-## 📦 Installation
+## Installation
 
 To run this dashboard locally:
 
@@ -64,7 +64,7 @@ The dashboard will be served at `http://127.0.0.1:8050/` by default.
 
 ---
 
-## 📌 Acknowledgments
+## Acknowledgments
 
 - This project builds upon the research supported by the University of New Hampshire and Shoals Marine Laboratory.
 - Data used in this dashboard were collected and published under the SML sustainability initiative.
@@ -72,6 +72,6 @@ The dashboard will be served at `http://127.0.0.1:8050/` by default.
 
 ---
 
-## 📝 License
+## License
 
 This project is shared for educational and research purposes. For data usage, please refer to the source repository at [https://sustainablesml.org](https://sustainablesml.org) and citation requirements in associated publications.
