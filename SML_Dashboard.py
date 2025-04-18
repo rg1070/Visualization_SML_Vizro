@@ -2,6 +2,7 @@ import vizro.models as vm
 import vizro.plotly.express as px
 from vizro import Vizro
 import pandas as pd
+import os
 
 # Load and preprocess data
 Energy_2022 = pd.read_csv("Energy_2022.csv")
@@ -128,4 +129,6 @@ page2 = vm.Page(
     ]
 )
 dashboard = vm.Dashboard(pages=[page1,page2])
-Vizro().build(dashboard).run()
+
+port = int(os.environ.get("PORT", 10000))
+Vizro().build(dashboard).run(host="0.0.0.0", port=port)
