@@ -38,6 +38,11 @@ fig2 = px.line(Energy_2022, x="Date", y="SOC (%)",title="Battery State of Charge
 
 
 color_order = ["PV", "Wind", "Diesel"]
+color_map = {
+    "PV": "green",
+    "Wind": "blue",
+    "Diesel": "orange"
+}
 
 fig3 = px.bar(
     df_summary,
@@ -45,7 +50,8 @@ fig3 = px.bar(
     y="Energy (kWh)",
     title="Total 92 days Energy Generation and Demand (kWh)",
     color="Source",
-    text="Energy (kWh)"  # <- This adds the labels
+    color_discrete_map=color_map,
+    text="Energy (kWh)"
 )
 
 fig3.update_traces(
@@ -70,8 +76,8 @@ fig4 = px.pie(
     values="Energy (kWh)",
     names="Source",
     title="Share of Energy Generation by Source",
-    hole=0.4,  # Optional: makes it a donut chart
-    color_discrete_map="Source",
+    hole=0.4,
+    color_discrete_map=color_map,
     category_orders={"Source": color_order}
 )
 
