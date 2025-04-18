@@ -129,6 +129,7 @@ page2 = vm.Page(
     ]
 )
 dashboard = vm.Dashboard(pages=[page1,page2])
+#Vizro().build(dashboard).run()
 
 port = int(os.environ.get("PORT", 10000))
 Vizro().build(dashboard).run(host="0.0.0.0", port=port)
